@@ -1,0 +1,9 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+EmpSchema = new Schema({
+    id : Number,
+    name : String,
+    salary : Number,
+    age : Number
+});
+module.exports = mongoose.model('Employee', EmpSchema);

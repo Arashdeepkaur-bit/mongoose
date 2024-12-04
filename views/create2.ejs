@@ -1,0 +1,128 @@
+<!-- <form action="/addbuy" method="post">
+
+    ORDER ID<input type="text" name="orderid"> Name <input type="text" name="name"> Salary <input type="text" name="salary"> Age <input type="text" name="age">
+
+    <input type="submit" value="submit">
+</form> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form</title>
+  <style>
+    /* Reset some default styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Style the form container */
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    /* Form title */
+    h2 {
+      text-align: center;
+      color: #333;
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    /* Style the form labels */
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* Style the input fields */
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #555;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    /* Focus effect for input fields */
+    input[type="text"]:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+
+    /* Style the submit button */
+    input[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for submit button */
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Add a bit of spacing between the form elements */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    /* Add some responsiveness */
+    @media (max-width: 768px) {
+      .form-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Buy Product</h2>
+    <form action="/addbuy" method="post">
+      <div class="form-group">
+        <label for="productid">Product ID</label>
+        <input type="text" name="productid" id="productid" required>
+      </div>
+      <div class="form-group">
+        <label for="productname">Product Name</label>
+        <input type="text" name="productname" id="productname" required>
+      </div>
+      <div class="form-group">
+        <label for="productprice">Price</label>
+        <input type="text" name="productprice" id="productprice" required>
+      </div>
+      <div class="form-group">
+        <label for="productquality">Quality</label>
+        <input type="text" name="productquality" id="productquality" required>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
